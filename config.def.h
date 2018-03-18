@@ -42,19 +42,19 @@ static unsigned int tripleclicktimeout = 600;
 int allowaltscreen = 1;
 
 /* frames per second st should at maximum draw to the screen */
-static unsigned int xfps = 120;
-static unsigned int actionfps = 30;
+const unsigned int xfps = 120;
+const unsigned int actionfps = 30;
 
 /*
  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
  * attribute.
  */
-static unsigned int blinktimeout = 800;
+const unsigned int blinktimeout = 800;
 
 /*
  * thickness of underline and bar cursors
  */
-static unsigned int cursorthickness = 2;
+const unsigned int cursorthickness = 2;
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -86,7 +86,7 @@ unsigned int tabspaces = 8;
 unsigned int alpha = 0xcc;
 
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
+const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
 	"red3",
