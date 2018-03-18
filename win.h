@@ -23,6 +23,16 @@ enum win_mode {
 	                  |MODE_MOUSEMANY,
 };
 
+/* alpha */
+#define OPAQUE 0Xff
+#define USE_ARGB (alpha != OPAQUE && opt_embed == NULL)
+
+typedef XftGlyphFontSpec GlyphFontSpec;
+
+void draw(void);
+void drawregion(int, int, int, int);
+void run(void);
+
 void xbell(void);
 void xclipcopy(void);
 void xdrawcursor(int, int, Glyph, int, int, Glyph);
